@@ -10,6 +10,9 @@
 		233FA81D21384E2A00D7DCF3 /* RegistrationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233FA81C21384E2A00D7DCF3 /* RegistrationTableViewController.swift */; };
 		233FA81F21384E4300D7DCF3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233FA81E21384E4300D7DCF3 /* User.swift */; };
 		233FA82121384ED000D7DCF3 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233FA82021384ED000D7DCF3 /* RegistrationViewModel.swift */; };
+		239DEA452139ADA40055661E /* DataAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239DEA442139ADA40055661E /* DataAccess.swift */; };
+		239DEA472139AED60055661E /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239DEA462139AED60055661E /* UsersTableViewController.swift */; };
+		239DEA492139AEE70055661E /* UsersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239DEA482139AEE70055661E /* UsersListViewModel.swift */; };
 		23B98F9D21384A7D00C72914 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B98F9C21384A7D00C72914 /* AppDelegate.swift */; };
 		23B98FA221384A7D00C72914 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23B98FA021384A7D00C72914 /* Main.storyboard */; };
 		23B98FA421384A7F00C72914 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23B98FA321384A7F00C72914 /* Assets.xcassets */; };
@@ -20,6 +23,9 @@
 		233FA81C21384E2A00D7DCF3 /* RegistrationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationTableViewController.swift; sourceTree = "<group>"; };
 		233FA81E21384E4300D7DCF3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		233FA82021384ED000D7DCF3 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		239DEA442139ADA40055661E /* DataAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAccess.swift; sourceTree = "<group>"; };
+		239DEA462139AED60055661E /* UsersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
+		239DEA482139AEE70055661E /* UsersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListViewModel.swift; sourceTree = "<group>"; };
 		23B98F9921384A7D00C72914 /* HelloMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23B98F9C21384A7D00C72914 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23B98FA121384A7D00C72914 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -66,6 +72,9 @@
 				233FA81C21384E2A00D7DCF3 /* RegistrationTableViewController.swift */,
 				233FA81E21384E4300D7DCF3 /* User.swift */,
 				233FA82021384ED000D7DCF3 /* RegistrationViewModel.swift */,
+				239DEA442139ADA40055661E /* DataAccess.swift */,
+				239DEA462139AED60055661E /* UsersTableViewController.swift */,
+				239DEA482139AEE70055661E /* UsersListViewModel.swift */,
 			);
 			path = HelloMVVM;
 			sourceTree = "<group>";
@@ -102,6 +111,7 @@
 				TargetAttributes = {
 					23B98F9821384A7D00C72914 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -143,8 +153,11 @@
 			files = (
 				233FA81D21384E2A00D7DCF3 /* RegistrationTableViewController.swift in Sources */,
 				233FA82121384ED000D7DCF3 /* RegistrationViewModel.swift in Sources */,
+				239DEA472139AED60055661E /* UsersTableViewController.swift in Sources */,
 				23B98F9D21384A7D00C72914 /* AppDelegate.swift in Sources */,
+				239DEA492139AEE70055661E /* UsersListViewModel.swift in Sources */,
 				233FA81F21384E4300D7DCF3 /* User.swift in Sources */,
+				239DEA452139ADA40055661E /* DataAccess.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +310,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.devtejay.HelloMVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -315,7 +328,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.devtejay.HelloMVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
