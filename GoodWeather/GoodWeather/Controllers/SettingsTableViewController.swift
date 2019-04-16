@@ -10,6 +10,8 @@ import Foundation
 import UIKit
 
 class SettingsTableViewController: UITableViewController {
+    private var settingsViewModel = SettingsViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.prefersLargeTitles = true
