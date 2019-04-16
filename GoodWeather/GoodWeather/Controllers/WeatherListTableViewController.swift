@@ -52,8 +52,7 @@ class WeatherListTableViewController: UITableViewController, AddWeatherDelegate 
         
         let weatherVM = self.weatherListViewModel.modelAt(indexPath.row)
         
-        cell.cityNameLabel.text = weatherVM.name
-        cell.temperatureLabel.text = "\(weatherVM.currentTemperature.temperature)"
+        cell.configure(weatherVM)
         return cell
     }
     
