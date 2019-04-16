@@ -24,6 +24,20 @@ class WeatherListTableViewController: UITableViewController, AddWeatherDelegate 
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "AddWeatherCityViewController" {
+            prepareSegueForAddWeatherCityViewController(segue: segue)
+        }else if segue.identifier == "SettingsTableViewController" {
+            prepareSegueForSettingsTableViewController(segue: segue)
+        }
+        
+        
+    }
+    
+    private func prepareSegueForSettingsTableViewController(segue: UIStoryboardSegue) {
+        
+    }
+    
+    private func prepareSegueForAddWeatherCityViewController(segue: UIStoryboardSegue) {
         guard let naviVC = segue.destination as? UINavigationController else {
             fatalError("NavigationController not found")
         }
