@@ -32,7 +32,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func setupDefaulSettings() {
         let userDefaults = UserDefaults.standard
-        userDefaults.set(Unit.fahrenheit.rawValue, forKey: "unit")
+        if userDefaults.value(forKey: "unit") == nil {
+            userDefaults.set(Unit.fahrenheit.rawValue, forKey: "unit")
+        }
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
