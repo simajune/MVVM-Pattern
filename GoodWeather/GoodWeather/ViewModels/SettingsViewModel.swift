@@ -14,7 +14,7 @@ enum Unit: String, CaseIterable {
 }
 
 extension Unit {
-    var dispalyName: String {
+    var displayName: String {
         get {
             switch(self) {
             case .celsius:
