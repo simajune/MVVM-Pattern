@@ -25,8 +25,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UIBarButtonItem.appearance().tintColor = UIColor.white
         
+        setupDefaulSettings()
         
         return true
+    }
+    
+    private func setupDefaulSettings() {
+        let userDefaults = UserDefaults.standard
+        userDefaults.set(Unit.fahrenheit.rawValue, forKey: "unit")
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
