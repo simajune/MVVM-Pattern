@@ -117,28 +117,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8RG-vY-iFK">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter City NAme" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8RG-vY-iFK">
                                 <rect key="frame" x="16" y="95" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h88-YM-7zd">
-                                <rect key="frame" x="170" y="133" width="34" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h88-YM-7zd">
+                                <rect key="frame" x="170" y="221" width="35" height="30"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
                                     <action selector="saveCityButtonPressed" destination="DfE-bL-hWC" eventType="touchUpInside" id="Iu4-Sx-NLi"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter State" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rqo-pE-X0C">
+                                <rect key="frame" x="16" y="133" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Zip Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4kP-EI-hUa">
+                                <rect key="frame" x="16" y="171" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="4kP-EI-hUa" secondAttribute="trailing" id="0RB-2b-Zry"/>
+                            <constraint firstItem="4kP-EI-hUa" firstAttribute="leading" secondItem="i84-aX-by0" secondAttribute="leadingMargin" id="9zY-DM-oT5"/>
                             <constraint firstItem="8RG-vY-iFK" firstAttribute="centerX" secondItem="h88-YM-7zd" secondAttribute="centerX" id="BbP-rr-aCw"/>
-                            <constraint firstItem="h88-YM-7zd" firstAttribute="top" secondItem="8RG-vY-iFK" secondAttribute="bottom" constant="8" symbolic="YES" id="Fes-gf-KUk"/>
+                            <constraint firstItem="Rqo-pE-X0C" firstAttribute="leading" secondItem="i84-aX-by0" secondAttribute="leadingMargin" id="H3M-i8-3GZ"/>
+                            <constraint firstItem="4kP-EI-hUa" firstAttribute="top" secondItem="Rqo-pE-X0C" secondAttribute="bottom" constant="8" id="JJh-IA-ptA"/>
                             <constraint firstItem="h88-YM-7zd" firstAttribute="leading" secondItem="TbN-bT-dKt" secondAttribute="leading" constant="170" id="KKO-XX-mL9"/>
+                            <constraint firstItem="h88-YM-7zd" firstAttribute="top" secondItem="4kP-EI-hUa" secondAttribute="bottom" constant="20" id="Lob-kg-Q0R"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Rqo-pE-X0C" secondAttribute="trailing" id="S3E-GM-Cy3"/>
                             <constraint firstItem="8RG-vY-iFK" firstAttribute="trailing" secondItem="i84-aX-by0" secondAttribute="trailingMargin" id="S9v-Uq-ghu"/>
                             <constraint firstItem="8RG-vY-iFK" firstAttribute="leading" secondItem="i84-aX-by0" secondAttribute="leadingMargin" id="TK4-tU-lFD"/>
                             <constraint firstItem="8RG-vY-iFK" firstAttribute="top" secondItem="TbN-bT-dKt" secondAttribute="top" constant="31" id="UDM-OE-riE"/>
+                            <constraint firstItem="Rqo-pE-X0C" firstAttribute="top" secondItem="8RG-vY-iFK" secondAttribute="bottom" constant="8" id="iQ5-zs-fbN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TbN-bT-dKt"/>
                     </view>
@@ -151,6 +169,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="cityNameTextField" destination="8RG-vY-iFK" id="z4n-Jo-KVl"/>
+                        <outlet property="stateTextField" destination="Rqo-pE-X0C" id="dUp-01-5eB"/>
+                        <outlet property="zipCodeTextField" destination="4kP-EI-hUa" id="ahb-e3-rtG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1l2-Yo-KQe" userLabel="First Responder" sceneMemberID="firstResponder"/>
