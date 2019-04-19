@@ -15,7 +15,6 @@ class BindingTextField: UITextField {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
         commonInit()
     }
     
