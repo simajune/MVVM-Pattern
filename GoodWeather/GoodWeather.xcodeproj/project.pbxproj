@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		232A120C226B7A8E00241EFB /* WeatherDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232A120B226B7A8E00241EFB /* WeatherDetailsViewController.swift */; };
 		233D442C22640C2900F5FFA4 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233D442B22640C2900F5FFA4 /* Double+Extension.swift */; };
 		3816663F226559C500CA382B /* 740-gear-toolbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 3816663C226559C500CA382B /* 740-gear-toolbar.png */; };
 		38166640226559C500CA382B /* 740-gear-toolbar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3816663D226559C500CA382B /* 740-gear-toolbar@3x.png */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		232A120B226B7A8E00241EFB /* WeatherDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailsViewController.swift; sourceTree = "<group>"; };
 		233D442B22640C2900F5FFA4 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 		3816663C226559C500CA382B /* 740-gear-toolbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "740-gear-toolbar.png"; sourceTree = "<group>"; };
 		3816663D226559C500CA382B /* 740-gear-toolbar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "740-gear-toolbar@3x.png"; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				8D5D959A21B31D47008DC2C2 /* WeatherListTableViewController.swift */,
 				8D5D959C21B31D71008DC2C2 /* AddWeatherCityViewController.swift */,
 				3816664222655BA900CA382B /* SettingsTableViewController.swift */,
+				232A120B226B7A8E00241EFB /* WeatherDetailsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 			files = (
 				8D5D95A021B3374B008DC2C2 /* WeatherCell.swift in Sources */,
 				8D5D959B21B31D47008DC2C2 /* WeatherListTableViewController.swift in Sources */,
+				232A120C226B7A8E00241EFB /* WeatherDetailsViewController.swift in Sources */,
 				233D442C22640C2900F5FFA4 /* Double+Extension.swift in Sources */,
 				8D5D959D21B31D71008DC2C2 /* AddWeatherCityViewController.swift in Sources */,
 				3816664322655BA900CA382B /* SettingsTableViewController.swift in Sources */,
