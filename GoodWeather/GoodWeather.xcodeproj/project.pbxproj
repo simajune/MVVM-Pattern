@@ -10,6 +10,7 @@
 		2309ECF72271F61C00D5241B /* WeatherDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309ECF62271F61C00D5241B /* WeatherDataSource.swift */; };
 		232A120C226B7A8E00241EFB /* WeatherDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232A120B226B7A8E00241EFB /* WeatherDetailsViewController.swift */; };
 		232CD2AE229EBACD003CE9FD /* SettingsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232CD2AD229EBACD003CE9FD /* SettingsViewModelTests.swift */; };
+		232CD2B022A01CCF003CE9FD /* WeatherListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232CD2AF22A01CCF003CE9FD /* WeatherListViewModelTests.swift */; };
 		233D442C22640C2900F5FFA4 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233D442B22640C2900F5FFA4 /* Double+Extension.swift */; };
 		23E556AB227B39CE0080574C /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E556AA227B39CE0080574C /* TableViewDataSource.swift */; };
 		3816663F226559C500CA382B /* 740-gear-toolbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 3816663C226559C500CA382B /* 740-gear-toolbar.png */; };
@@ -46,6 +47,7 @@
 		232CD2A1229EB6C2003CE9FD /* GoodWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		232CD2A5229EB6C2003CE9FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		232CD2AD229EBACD003CE9FD /* SettingsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModelTests.swift; sourceTree = "<group>"; };
+		232CD2AF22A01CCF003CE9FD /* WeatherListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewModelTests.swift; sourceTree = "<group>"; };
 		233D442B22640C2900F5FFA4 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 		23E556AA227B39CE0080574C /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		3816663C226559C500CA382B /* 740-gear-toolbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "740-gear-toolbar.png"; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			children = (
 				232CD2A5229EB6C2003CE9FD /* Info.plist */,
 				232CD2AD229EBACD003CE9FD /* SettingsViewModelTests.swift */,
+				232CD2AF22A01CCF003CE9FD /* WeatherListViewModelTests.swift */,
 			);
 			path = GoodWeatherTests;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				232CD2AE229EBACD003CE9FD /* SettingsViewModelTests.swift in Sources */,
+				232CD2B022A01CCF003CE9FD /* WeatherListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
