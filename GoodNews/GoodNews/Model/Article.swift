@@ -14,5 +14,5 @@ struct ArticleList: Decodable {
 
 struct Article: Decodable {
     let title: String
-    let desciption: String?
+    let description: String?
 }

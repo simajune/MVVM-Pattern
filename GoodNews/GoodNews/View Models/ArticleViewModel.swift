@@ -13,11 +13,11 @@ struct ArticleListViewModel {
 }
 
 extension ArticleListViewModel {
-    var numberOfSection: Int {
+    var numberOfSections: Int {
         return 1
     }
     
-    func numberOfRowsInSection(_ section: Int) -> Int {
+    func numberOfRowsInSections(_ section: Int) -> Int {
         return self.articles.count
     }
     
@@ -43,6 +43,6 @@ extension ArticleViewModel {
     }
     
     var description: String {
-        return self.article.desciption ?? ""
+        return self.article.description ?? ""
     }
 }
